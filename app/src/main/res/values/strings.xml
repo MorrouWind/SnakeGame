@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SnakeGame</string>
+    <string name="game_over_play_again">Game Over ! Play Again</string>
+    <string name="new_game">New Game</string>
+    <string name="resume_game">Resume Game</string>
+    <string name="up">UP</string>
+    <string name="left">LEFT</string>
+    <string name="pause">PAUSE</string>
+    <string name="right">RIGHT</string>
+    <string name="down">DOWN</string>
+    <string name="score">score</string>
+    <string name="your_score_is_0">Your score is: 0</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="about_text">This is my interpretation of the snake game, all the rules of the well-known game are preserved with minor changes. Have a good game. The game code is at the link below.
+    2023</string>
+    <string name="about_title">SNAKE</string>
+    <string name="code_button">CODE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

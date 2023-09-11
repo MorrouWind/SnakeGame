@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/olive"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Score: 0"
+        android:textColor="@color/dark_green"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <FrameLayout
+        android:id="@+id/board"
+        android:layout_width="380dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/dark_green"
+        android:foregroundGravity="center">
+
+        <FrameLayout
+            android:background="@color/olive"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/score"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="60dp"
+                android:backgroundTint="@color/dark_green"
+                android:backgroundTintMode="src_over"
+                android:gravity="center"
+                android:text="@string/your_score_is_0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/playAgain"
+                android:layout_width="150dp"
+                android:layout_height="95dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/dark_green"
+                android:gravity="center"
+                android:text="@string/game_over_play_again"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                >
+
+            </Button>
+
+            <Button
+                android:id="@+id/resume"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/dark_green"
+                android:text="@string/resume_game"
+                android:textAlignment="center"
+                android:visibility="gone">
+
+            </Button>
+
+            <Button
+                android:id="@+id/new_game"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/dark_green"
+                android:text="@string/new_game"
+                android:visibility="gone">
+
+            </Button>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <!-- Controller-->
+
+    <LinearLayout
+        android:id="@+id/controller"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:background="@color/olive"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/upButton"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_margin="1dp"
+            android:background="@color/dark_green"
+            android:src="@drawable/up_arrow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/leftButton"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_margin="1dp"
+                android:background="@color/dark_green"
+                android:src="@drawable/left_arrow" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/pause"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_margin="1dp"
+                android:background="@color/dark_green"
+                android:src="@drawable/pause" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/rightButton"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_margin="1dp"
+                android:background="@color/dark_green"
+                android:src="@drawable/right_arrow" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/downButton"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_margin="1dp"
+            android:background="@color/dark_green"
+            android:src="@drawable/down_arrow" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
